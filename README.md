@@ -17,3 +17,10 @@ assets/img/             → logo e favicon
 ## Pendências
 - Formulário: integrar com o CRM no trecho `// TODO` em `assets/js/main.js`.
 - Rodapé: apontar o link da Política de Privacidade para a URL real.
+
+## Fotos
+- `assets/img/equipe-tela.jpg` → seção "O desafio" (acima do widget de menções).
+- `assets/img/equipe-reuniao.jpg` → seção "Para quem é".
+- `assets/img/equipe-analise.jpg` → bloco "Suporte à decisão" (seção Premissas).
+- `assets/img/cta-bg.jpg` → fundo sutil da seção final (formulário).
+- Para trocar uma foto, substitua o arquivo mantendo o mesmo nome. Formato: JPG horizontal, ~1400px de largura.

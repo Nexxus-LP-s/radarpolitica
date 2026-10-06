@@ -65,12 +65,17 @@ layoutLabels();document.fonts&&document.fonts.ready.then(layoutLabels);addEventL
 
 /* ---------- Ruído → sinal ---------- */
 const noise=$('#noise'),btn=$('#noiseBtn');
-const items=[["Portal local",0],["#tendência",0],["Comentário",0],["Post no X",1],["YouTube",0],["Menção direta",0],["Blog regional",0],["Crítica no Instagram",1],["Notícia nacional",0],["Grupo de bairro",0],["Live",0],["Repost",0],["Enquete",0],["Portal local · PL 45",1],["Story",0],["Podcast",0],["Coluna",0],["Thread",0]];
+const items=[["Portal local",0],["#tendência",0],["Comentário",0],["Post no X",1],["YouTube",0],["Menção direta",0],["Blog regional",0],["Crítica no Instagram",1],["Notícia nacional",0],["Live",0],["Repost",0],["Portal local · PL 45",1],["Story",0],["Coluna",0]];
 const chips=items.map(([t,k])=>{const c=document.createElement('span');c.className='chip'+(k?' key':'');c.textContent=t;noise.appendChild(c);return c});
 const focus=document.createElement('div');focus.className='focus';focus.innerHTML='<small>SINAL RELEVANTE IDENTIFICADO</small><p>3 menções conectadas ao tema <b>Projeto de Lei 45</b> em canais diferentes, com crescimento de tom crítico.</p>';noise.appendChild(focus);
 const rnd=(a,b)=>a+Math.random()*(b-a);
-function scatter(){const w=noise.clientWidth,h=noise.clientHeight;chips.forEach(c=>{const cw=c.offsetWidth||120;c.style.left=rnd(10,Math.max(12,w-cw-10))+'px';c.style.top=rnd(60,h-44)+'px';c.style.transform=`rotate(${rnd(-8,8)}deg)`})}
-function sort(){let i=0;chips.forEach(c=>{if(c.classList.contains('key')){c.style.left='20px';c.style.top=(64+i*44)+'px';c.style.transform='none';i++}})}
+function scatter(){const w=noise.clientWidth,h=noise.clientHeight;
+  /* distribui os chips em linhas, sem sobreposição, com leve desalinhamento */
+  const order=chips.slice().sort(()=>Math.random()-.5);let x=10+rnd(0,20),y=50,row=0;
+  order.forEach(c=>{const cw=c.offsetWidth||110;if(x+cw>w-10){row++;y=50+row*36;x=10+rnd(0,26)}
+    if(y>h-34){c.style.left=rnd(10,w-cw-10)+'px';c.style.top=rnd(50,h-34)+'px'}else{c.style.left=x+'px';c.style.top=(y+rnd(-4,4))+'px'}
+    c.style.transform=`rotate(${rnd(-5,5)}deg)`;x+=cw+rnd(8,22)})}
+function sort(){let i=0;chips.forEach(c=>{if(c.classList.contains('key')){c.style.left='14px';c.style.top=(46+i*34)+'px';c.style.transform='none';i++}})}
 scatter();
 btn.addEventListener('click',()=>{const on=noise.classList.toggle('sorted');btn.textContent=on?'Ver sem o Radar':'Ver com o Radar';on?sort():scatter()});
 new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){setTimeout(()=>{if(!noise.classList.contains('sorted'))btn.click()},1800);o.disconnect()}}),{threshold:.5}).observe(noise);

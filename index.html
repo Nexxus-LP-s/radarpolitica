@@ -148,8 +148,14 @@
         <div class="pain" data-a="left"><span class="n">03</span><div><h4>A equipe reage quando o tema já está na pauta</h4><p>Sem contexto, o tempo de resposta é consumido entendendo o que aconteceu — não decidindo o que fazer.</p></div></div>
       </div>
     </div>
-    <div class="noise" id="noise" data-a="scale" style="--d:.15s">
-      <button class="toggle" id="noiseBtn" type="button">Ver com o Radar</button>
+    <div class="prob-visual">
+      <figure class="photo prob-photo" data-a="reveal">
+        <img src="assets/img/equipe-tela.jpg" alt="Equipe identificando informações relevantes em uma tela" loading="lazy" width="780" height="570">
+      </figure>
+      <div class="noise" id="noise" data-a="up" style="--d:.35s">
+        <span class="noise-tag">Menções do dia</span>
+        <button class="toggle" id="noiseBtn" type="button">Ver com o Radar</button>
+      </div>
     </div>
   </div>
 </section>
@@ -196,64 +202,40 @@
 </section>
 
 <!-- ============ SOLUÇÃO ============ -->
-<section class="sec" id="como-funciona">
+<section class="sec light white" id="como-funciona">
   <div class="wrap center">
     <span class="eyebrow" data-a="up">A solução</span>
     <h2 class="h2" data-a="up" style="--d:.08s">Do sinal à decisão. <br><span class="hl">Com contexto em cada etapa.</span></h2>
     <p class="lead" data-a="up" style="--d:.16s">O Radar Política reúne informações públicas e transforma esse volume em uma leitura organizada, contextualizada e útil para a rotina de equipes políticas.</p>
     <div class="flow" data-stagger>
-      <div class="fcard" data-a="up"><div class="num">01</div><div class="lbl">Sinal</div><h3>Identificar</h3><p>Encontrar os sinais relevantes em meio ao volume diário de menções, notícias e conversas.</p></div>
-      <div class="fcard" data-a="up"><div class="num">02</div><div class="lbl">Interpretação</div><h3>Interpretar</h3><p>Entender o significado das menções: sentimento, tema, origem e o que mudou.</p></div>
-      <div class="fcard" data-a="up"><div class="num">03</div><div class="lbl">Contexto</div><h3>Contextualizar</h3><p>Relacionar novos temas com o histórico do mandato e com episódios anteriores.</p></div>
-      <div class="fcard" data-a="up"><div class="num">04</div><div class="lbl">Decisão</div><h3>Priorizar</h3><p>Direcionar a atenção da equipe para o que realmente exige análise e resposta.</p></div>
+      <div class="fcard" data-a="up" style="--c:#2CBEC4"><div class="num">01</div><div class="lbl">Sinal</div><h3>Identificar</h3><p>Encontrar os sinais relevantes em meio ao volume diário de menções, notícias e conversas.</p></div>
+      <div class="fcard" data-a="up" style="--c:#28A6C3"><div class="num">02</div><div class="lbl">Interpretação</div><h3>Interpretar</h3><p>Entender o significado das menções: sentimento, tema, origem e o que mudou.</p></div>
+      <div class="fcard" data-a="up" style="--c:#3B8FC4"><div class="num">03</div><div class="lbl">Contexto</div><h3>Contextualizar</h3><p>Relacionar novos temas com o histórico do mandato e com episódios anteriores.</p></div>
+      <div class="fcard" data-a="up" style="--c:#1F6FA3"><div class="num">04</div><div class="lbl">Decisão</div><h3>Priorizar</h3><p>Direcionar a atenção da equipe para o que realmente exige análise e resposta.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============ RECURSOS ============ -->
 <section class="sec features" id="recursos">
-  <div class="wrap">
-    <div class="center">
+  <div class="wrap feat-wrap">
+    <div class="feat-head">
       <span class="eyebrow" data-a="up">Recursos</span>
-      <h2 class="h2" data-a="up" style="--d:.08s">Cada recurso existe para <br><span class="hl">encurtar o caminho até a decisão.</span></h2>
+      <h2 class="h2" data-a="up" style="--d:.08s">Cada recurso existe para <span class="hl">encurtar o caminho até a decisão.</span></h2>
+      <p class="lead" data-a="up" style="--d:.16s">Menos tempo procurando informação. Mais clareza sobre o que merece atenção.</p>
+      <a href="#demonstracao" class="btn btn-ghost" data-a="up" style="--d:.24s">Ver na demonstração</a>
     </div>
-    <div class="feat-grid" data-stagger>
-      <div class="feat wide" data-a="up">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.5a3 3 0 0 0-3 3v1a3 3 0 0 0 0 6v1a3 3 0 0 0 3 3v.5A2.5 2.5 0 0 0 12 19.5v-15A2.5 2.5 0 0 0 9.5 2zM14.5 2A2.5 2.5 0 0 1 17 4.5v.5a3 3 0 0 1 3 3v1a3 3 0 0 1 0 6v1a3 3 0 0 1-3 3v.5a2.5 2.5 0 0 1-5 0"/></svg></div>
-        <h3>IA Política</h3>
-        <p>Classifica e interpreta automaticamente as menções em redes sociais, portais e blogs: sentimento, tema, entidades citadas e foco da crítica ou do elogio.</p>
-        <div class="ben"><b>Na prática:</b> <span>sua equipe lê a interpretação, não centenas de links soltos.</span></div>
-      </div>
-      <div class="feat wide" data-a="up">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
-        <h3>RadarScore</h3>
-        <p>Um indicador de 0 a 100 que acompanha a evolução da reputação no tempo, considerando volume, sentimento e o surgimento de novos temas.</p>
-        <div class="ben"><b>Na prática:</b> <span>uma visão simples para reportar a evolução da imagem pública.</span></div>
-      </div>
-      <div class="feat" data-a="up">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>
-        <h3>Radar Temas</h3>
-        <p>Identifica e acompanha os temas orgânicos associados à sua presença pública.</p>
-        <div class="ben"><b>Na prática:</b> <span>saiba do que as pessoas falam antes do assunto dominar a pauta.</span></div>
-      </div>
-      <div class="feat" data-a="up">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
-        <h3>Radar Crise</h3>
-        <p>Alertas para mudanças relevantes de percepção e para a evolução de um ruído discreto em volume crítico.</p>
-        <div class="ben"><b>Na prática:</b> <span>mais tempo para avaliar se o caso exige resposta.</span></div>
-      </div>
-      <div class="feat" data-a="up">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l4 2"/></svg></div>
-        <h3>Histórico estruturado</h3>
-        <p>Episódios, precedentes e temas organizados ao longo do mandato, prontos para consulta.</p>
-        <div class="ben"><b>Na prática:</b> <span>o presente da política também se entende pelo que já aconteceu.</span></div>
-      </div>
+    <div class="ft-list" data-stagger>
+        <div class="ft" data-a="up"><div class="ft-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.5a3 3 0 0 0-3 3v1a3 3 0 0 0 0 6v1a3 3 0 0 0 3 3v.5A2.5 2.5 0 0 0 12 19.5v-15A2.5 2.5 0 0 0 9.5 2zM14.5 2A2.5 2.5 0 0 1 17 4.5v.5a3 3 0 0 1 3 3v1a3 3 0 0 1 0 6v1a3 3 0 0 1-3 3v.5a2.5 2.5 0 0 1-5 0"/></svg></div><div><h3>IA Política</h3><p>Classifica e interpreta as menções: sentimento, tema e foco da crítica ou do elogio.</p><span class="ft-ben"><b>Na prática:</b> sua equipe lê a interpretação, não centenas de links.</span></div></div>
+        <div class="ft" data-a="up"><div class="ft-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.5"/></svg></div><div><h3>RadarScore</h3><p>Indicador de 0 a 100 que mostra a evolução da reputação ao longo do tempo.</p><span class="ft-ben"><b>Na prática:</b> uma visão simples para acompanhar e reportar a imagem pública.</span></div></div>
+        <div class="ft" data-a="up"><div class="ft-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div><div><h3>Temas e alertas</h3><p>Acompanha os temas ligados ao seu nome e avisa quando a percepção muda ou um ruído começa a crescer.</p><span class="ft-ben"><b>Na prática:</b> mais tempo para avaliar se o caso exige resposta.</span></div></div>
+        <div class="ft" data-a="up"><div class="ft-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l4 2"/></svg></div><div><h3>Histórico estruturado</h3><p>Episódios, precedentes e temas organizados ao longo do mandato, prontos para consulta.</p><span class="ft-ben"><b>Na prática:</b> o presente da política também se entende pelo que já aconteceu.</span></div></div>
     </div>
   </div>
 </section>
 
 <!-- ============ EVIDÊNCIA ============ -->
-<section class="sec evid" id="evidencia">
+<section class="sec light evid-l" id="evidencia">
   <div class="wrap">
     <div class="center">
       <span class="eyebrow" data-a="up">Veja na prática</span>
@@ -288,46 +270,11 @@
       </div>
     </div>
 
-    <div class="scorebox" data-a="up">
-      <div>
-        <span class="eyebrow">RadarScore</span>
-        <h3>Uma visão simples da evolução da reputação</h3>
-        <p>O indicador varia conforme mudanças no cenário, volume, sentimento e surgimento de novos temas — e mostra onde olhar com mais atenção.</p>
-        <div class="big"><span data-count="74">0</span><small>/100</small></div>
-      </div>
-      <div class="schart" data-in>
-        <svg viewBox="0 0 640 230" fill="none" role="img" aria-label="Gráfico demonstrativo do RadarScore ao longo do ano">
-          <defs><linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FA3D1" stop-opacity=".28"/><stop offset="1" stop-color="#4FA3D1" stop-opacity="0"/></linearGradient></defs>
-          <g stroke="rgba(255,255,255,.06)"><path d="M40 30h590M40 80h590M40 130h590M40 180h590"/></g>
-          <g class="ax" fill="rgba(255,255,255,.45)" font-family="Inter"><text x="0" y="34">100</text><text x="6" y="84">75</text><text x="6" y="134">50</text><text x="6" y="184">25</text>
-          <text x="40" y="214">Jan</text><text x="140" y="214">Mar</text><text x="250" y="214">Mai</text><text x="360" y="214">Jul</text><text x="470" y="214">Set</text><text x="580" y="214">Nov</text></g>
-          <path class="sarea" d="M40 100 C90 96,120 90,160 80 S230 60,270 62 S340 92,380 110 S440 120,470 108 S560 90,620 84 L620 185 L40 185Z" fill="url(#gb)"/>
-          <path class="sline" pathLength="1" d="M40 100 C90 96,120 90,160 80 S230 60,270 62 S340 92,380 110 S440 120,470 108 S560 90,620 84" stroke="#4FA3D1" stroke-width="2.5"/>
-          <circle class="pt" style="transition-delay:.7s" cx="160" cy="80" r="6" fill="#2CBEC4"/>
-          <circle class="pt" style="transition-delay:1s" cx="270" cy="62" r="6" fill="#4FA3D1"/>
-          <circle class="pt" style="transition-delay:1.35s" cx="380" cy="110" r="7" fill="#FF9D4D"/>
-          <circle class="pt" style="transition-delay:1.9s" cx="560" cy="88" r="6" fill="#2CBEC4"/>
-          <g font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="600">
-            <g class="lab" data-cx="160" style="transition-delay:.9s"><line x1="160" y1="66" x2="160" y2="74" stroke="rgba(44,190,196,.55)" stroke-width="1.5" stroke-dasharray="2 3"/><rect x="89.5" y="42" width="141" height="24" rx="7" fill="#0B1F33" stroke="rgba(44,190,196,.55)"/><text x="160" y="54.5" text-anchor="middle" dominant-baseline="central" fill="#fff">Aumento de menções</text></g>
-            <g class="lab" data-cx="270" style="transition-delay:1.2s"><line x1="270" y1="30" x2="270" y2="56" stroke="rgba(79,163,209,.6)" stroke-width="1.5" stroke-dasharray="2 3"/><rect x="193.0" y="6" width="154" height="24" rx="7" fill="#0B1F33" stroke="rgba(79,163,209,.6)"/><text x="270" y="18.5" text-anchor="middle" dominant-baseline="central" fill="#fff">Mudança de percepção</text></g>
-            <g class="lab" data-cx="380" style="transition-delay:1.55s"><line x1="380" y1="117" x2="380" y2="128" stroke="rgba(255,157,77,.65)" stroke-width="1.5" stroke-dasharray="2 3"/><rect x="349.0" y="128" width="62" height="24" rx="7" fill="#0B1F33" stroke="rgba(255,157,77,.65)"/><text x="380" y="140.5" text-anchor="middle" dominant-baseline="central" fill="#FF9D4D">Alerta</text></g>
-            <g class="lab" data-cx="560" style="transition-delay:2.1s"><line x1="560" y1="74" x2="560" y2="82" stroke="rgba(44,190,196,.55)" stroke-width="1.5" stroke-dasharray="2 3"/><rect x="519.5" y="50" width="81" height="24" rx="7" fill="#0B1F33" stroke="rgba(44,190,196,.55)"/><text x="560" y="62.5" text-anchor="middle" dominant-baseline="central" fill="#fff">Novo tema</text></g>
-          </g>
-        </svg>
-        <ul class="slegend">
-          <li><i style="background:#2CBEC4"></i>Aumento de menções</li>
-          <li><i style="background:#4FA3D1"></i>Mudança de percepção</li>
-          <li><i style="background:#FF9D4D"></i>Alerta</li>
-          <li><i style="background:#2CBEC4"></i>Novo tema</li>
-        </ul>
-        <div class="note">Dados demonstrativos para fins de apresentação</div>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- ============ APLICAÇÕES ============ -->
-<section class="sec light" id="aplicacoes">
+<section class="sec rotina" id="aplicacoes">
   <div class="wrap">
     <div class="center">
       <span class="eyebrow" data-a="up">Na rotina do gabinete</span>
@@ -344,12 +291,15 @@
 </section>
 
 <!-- ============ PARA QUEM ============ -->
-<section class="sec">
+<section class="sec light white">
   <div class="wrap aud">
     <div>
       <span class="eyebrow" data-a="up">Para quem é</span>
       <h2 class="h2" data-a="up" style="--d:.08s">Feito para quem decide <span class="hl">e para quem prepara a decisão.</span></h2>
       <p class="lead" data-a="up" style="--d:.16s">O Radar Política foi pensado para a rotina de mandatos e equipes que precisam de clareza com agilidade — independentemente de partido ou posicionamento.</p>
+      <figure class="photo photo-sm" data-a="reveal" style="--d:.2s">
+        <img src="assets/img/equipe-reuniao.jpg" alt="Reunião de equipe para tomada de decisão" loading="lazy" width="1400" height="875" onerror="this.closest('figure').remove()">
+      </figure>
     </div>
     <div class="aud-list" data-stagger>
       <div class="aud-item" data-a="scale"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg><h4>Parlamentares</h4><p>Visão clara da própria reputação e dos temas que movem a opinião pública.</p></div>
@@ -373,7 +323,22 @@
       <div class="pr" data-a="up"><h4>DADOS PÚBLICOS</h4><p>Análise focada estritamente em informações disponíveis em ambientes públicos.</p></div>
       <div class="pr" data-a="up"><h4>TECNOLOGIA</h4><p>Inteligência Artificial aplicada exclusivamente à análise estruturada e à organização.</p></div>
     </div>
-    <div class="support" data-a="up"><b>SUPORTE À DECISÃO</b><p>A plataforma apoia o trabalho humano, mas não substitui a estratégia nem a decisão da sua equipe.</p></div>
+    <div class="human">
+      <figure class="photo" data-a="reveal">
+        <img src="assets/img/equipe-analise.jpg" alt="Equipe analisando informações em um notebook" loading="lazy" width="1400" height="1050">
+        <div class="photo-chip"><span class="live">LEITURA DO DIA</span><b>3 sinais priorizados</b><small>para análise da equipe</small></div>
+      </figure>
+      <div class="human-copy">
+        <span class="eyebrow" data-a="up">Suporte à decisão</span>
+        <h3 data-a="up" style="--d:.08s">A tecnologia organiza a informação. <span class="hl">A decisão continua com a sua equipe.</span></h3>
+        <p data-a="up" style="--d:.16s">O Radar Política apoia o trabalho humano com leitura estruturada e contexto, mas não substitui a estratégia, a experiência nem o julgamento de quem conhece o mandato.</p>
+        <ul class="ben-list" data-stagger>
+          <li data-a="left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Menos tempo reunindo informação, mais tempo analisando</li>
+          <li data-a="left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Briefings mais completos para reuniões e votações</li>
+          <li data-a="left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Equipe alinhada sobre o que merece prioridade</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 

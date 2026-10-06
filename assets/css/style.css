@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5{font-family:var(--ff-h);line-height:1.12;letter-spacing:-.01em}
 .lead{font-size:clamp(1rem,.95rem + .3vw,1.15rem);color:rgba(255,255,255,.78);max-width:640px}
 section{position:relative}
 .sec{padding:clamp(72px,6rem + 2vw,120px) 0}
-.center{text-align:center}.center .lead{margin:0 auto}
+.center{text-align:center}.center .lead{margin:0 auto;max-width:780px}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
 
 /* ---------- Scroll animations ---------- */
